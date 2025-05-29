@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interactive Wheel 🎡</title>
+  <meta name="description" content="Interactive wheel to make fun decisions." />
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.1/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <main>
+    <!-- Item list -->
+    <section class="elements-box">
+      <h1>🎯 Items</h1>
+
+      <div id="items-container"></div>
+
+      <div class="input-row">
+        <input id="new-item" type="text" placeholder="Type a word" autocomplete="off" />
+        <button id="add-item">➕ Add</button>
+      </div>
+
+      <p id="warning" class="text-red-300 hidden">Add at least 2 items to spin the wheel.</p>
+    </section>
+
+    <!-- Wheel section -->
+    <section class="wheel-section">
+      <div class="wheel-container">
+        <canvas id="wheel-canvas" width="500" height="500"></canvas>
+        <div class="selector-right"></div>
+      </div>
+
+      <button id="spin-button">🎡 Spin</button>
+
+      <h2 id="result" class="hidden animate-zoom-fade">🎉 Winner: <span></span></h2>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>

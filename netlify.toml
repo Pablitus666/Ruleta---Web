@@ -1,0 +1,8 @@
+[build]
+functions = "netlify/functions"
+publish = "."
+
+[[redirects]]
+  from = "/api/emoji-search"
+  to = "/.netlify/functions/emoji-search"
+  status = 200
