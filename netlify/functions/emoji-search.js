@@ -1,7 +1,7 @@
 // netlify/functions/emoji-search.js
 const fetch = require('node-fetch');
 
-exports.handler = async function (event) {
+exports.handler = async function(event) {
   const API_KEY = process.env.EMOJI_API_KEY;
   const query = event.queryStringParameters.q;
 
