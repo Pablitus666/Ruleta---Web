@@ -1,0 +1,23 @@
+{
+  "name": "ruleta---web",
+  "version": "1.0.0",
+  "main": "emojiService.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pablitus666/Ruleta---Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pablitus666/Ruleta---Web/issues"
+  },
+  "homepage": "https://github.com/Pablitus666/Ruleta---Web#readme",
+  "description": "",
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
